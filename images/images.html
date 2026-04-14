@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrazy</title>
+</head>
+<body>
+    <h1>Przykładowe treści nietekstowe</h1>
+    <section aria-labelledby="1_example_header">
+        <h2 id="1_example_header">Przykład 1</h2>
+        <p>Obraz bez kontekstu, należy dodać alternatywę.</p>
+        <svg id="example-1-svg" width="200" height="200">
+            <polygon points="100,20 20,180 180,180" 
+                     fill="blue" 
+                     stroke="black" 
+                     stroke-width="3"/>
+        </svg>
+        <details>
+            <summary>Przykładowe rozwiązania dla przykładu 1</summary>
+            <button id="add-role-img-button" type="button">Dodaj role="img"</button>
+            <button id="add-aria-label-button" type="button">Dodaj aria-label</button>
+        </details>
+        <p id="example-1-status" aria-live="polite"></p>
+    </section>
+    <section aria-labelledby="2_example_header">
+        <h2 id="2_example_header">Przykład 2</h2>
+        <p>Obraz bez kontekstu, należy dodać alternatywę.</p>
+        <img src="pies.jpg" width="20%" height="20%">
+        <details>
+            <summary>Przykładowe rozwiązania dla przykładu 1</summary>
+            <button type="button">Dodaj role="img"</button>
+            <button type="button">Dodaj aria-label="trójkąt"</button>
+        </details>
+    </section>
+    <script src="images.js"></script>
+</body>
+</html>
